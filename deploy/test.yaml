@@ -1,5 +1,5 @@
-project: "testbed"
-name: "testbed"
+project: "test"
+name: "test"
 common:
   image:
     repository: 301591718339.dkr.ecr.ap-northeast-2.amazonaws.com/cicd-demo
