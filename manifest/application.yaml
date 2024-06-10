@@ -1,12 +1,12 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: ps-testbed
+  name: test
   namespace: argocd
   finalizers:
     - resources-finalizer.argocd.argoproj.io
 spec:
-  project: testbed
+  project: test
   source:
     repoURL: https://github.com/imsosleepy/argocd.git
     targetRevision: main
