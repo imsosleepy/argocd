@@ -1,0 +1,18 @@
+project: "testbed"
+name: "testbed"
+common:
+  image:
+    repository: 301591718339.dkr.ecr.ap-northeast-2.amazonaws.com/cicd-demo
+  port: 8080
+  ingressPath: ["/"]
+  healthCheckPath: "/actuator/health"
+deploy:
+  test:
+    imageTag: "test-6bc41956cdf7be065852dcec73812d40483f98a7"
+    domain: [""]
+    replicaCount: 1
+    resources:
+      requests:
+        memory: "1Gi"
+      limits:
+        memory: "1Gi"
